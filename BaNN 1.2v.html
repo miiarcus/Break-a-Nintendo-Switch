@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html> 
+
+<head> 
+	<title>Break a Nintendo Switch Simulator v1.2</title>	 
+</head> 
+
+<body id = "body" style = "text-align:center;"> 
+	
+	<h1 style = "color:red;" > 
+		Break a Nintendo Switch v1.2 
+	</h1> 
+  
+  <h5>Created by Marcusverse on GitHub</h5>
+    
+    <h4>Patch notes > Cleared up some code to make the code run more faster > Added a button clicker</h4>
+	
+	<p id = "up" style = 
+			"font-size: 15px; font-weight: bold;"> 
+	</p> 
+	
+	<button onclick = "hello()">*breaks switch*</button> 
+    <p id="demo"></p>
+	
+	<script> 
+		var up = document.getElementById('up'); 
+		up.innerHTML = "Click on the button to break a Nintendo Switch"; 
+         var clicks = 0; 		
+		function hello() { 
+			
+            clicks += 1;
+            document.getElementById("demo").innerHTML = clicks;
+
+            var img = document.createElement('img'); 
+			img.src = 
+'https://media.discordapp.net/attachments/731383102722539600/735767325227352135/finished_playing_my_switch.png?width=663&height=432'; 
+			document.getElementById('body').appendChild(img); 
+		} 
+	</script> 
+
+
+</body>
+</html> 
